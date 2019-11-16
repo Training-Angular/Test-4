@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Nunito:200,300,400,600,700,800,900&display=swap&subset=vietnamese");
+@import url("https://fonts.googleapis.com/css?family=Nunito:200,300,400,600,700,800,900&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Pacifico&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Anton&display=swap");
@@ -17,9 +17,39 @@ h2 {
   font-size: 84px;
 }
 
+h6 {
+  font-size: 14px;
+  font-weight: 200;
+  margin: 0;
+  padding: 0;
+}
+
+.fs-14 {
+  font-size: 14px !important;
+}
+
+.fs-28 {
+  font-size: 28px !important;
+}
+
+.fs-48 {
+  font-size: 48px !important;
+}
+
+.fw-300 {
+  font-weight: 300 !important;
+}
+
+.fw-200 {
+  font-weight: 200 !important;
+}
+
+.text-orange {
+  color: rgb(222, 80, 33);
+}
+
 /* Navbar */
 .navbar {
-  background-color: #ffffff;
   height: 65px;
   text-transform: uppercase;
 }
@@ -30,8 +60,6 @@ h2 {
 
 li.nav-item {
   padding: 0 10px;
-  font-size: 14px;
-  font-weight: 300;
 }
 
 .nav-item.active .nav-link:hover,
@@ -49,12 +77,6 @@ a.nav-link:hover,
 .dropdown-menu {
   left: -15px;
   top: 22px;
-  border: none;
-}
-
-.dropdown-item {
-  font-size: 14px;
-  font-weight: 300;
 }
 
 .dropdown-item:hover {
@@ -69,19 +91,14 @@ a.nav-link:hover,
 /* Header */
 .header .top {
   background: black;
-  padding: 8px;
-  font-size: 14px;
-  font-weight: 300;
 }
 
 .header .locations h2 {
   font-family: "Pacifico", cursive;
-  font-size: 42px;
 }
 
 .header .locations h1 {
   font-family: "Anton", sans-serif;
-  font-size: 47px;
 }
 
 .b-logo p {
@@ -96,7 +113,6 @@ a.nav-link:hover,
 
 .header {
   margin-top: 65px;
-  min-width: 960px;
   height: 1162px;
   background: url("./images/bg_parallax.webp") fixed no-repeat;
   background-position-y: -300px;
@@ -104,189 +120,69 @@ a.nav-link:hover,
 }
 
 /* About */
-.about {
-  margin-bottom: 130px;
-}
-
 .about p {
   font-size: 20px;
   line-height: 1.6em;
   color: #8c8c8c;
-  font-weight: 300;
-}
-
-.about h1 {
-  margin: 25px 0 40px;
 }
 
 /* Happy hours */
 .hh-holiday h6 {
   font-size: 16px;
   font-weight: 200;
-  margin: 0;
-}
-
-.hh-holiday h1 {
-  padding-bottom: 19px;
 }
 
 .happy-hours .col-6 {
   height: 780px;
-  padding: 0;
-  width: 100%;
 }
 
 .col-6.hh-cheers {
   background: url("./images/hh-1.jpg") center;
-  background-size: cover;
 }
 
 .col-6.hh-holiday {
   background: url("./images/hh-2.jpg") center;
-  background-size: cover;
-}
-
-.col-6.hh-holiday .row {
-  padding-top: 100px;
-  color: white;
-}
-
-.col-4.fancy-drink-1 {
-  background: url("./images/fd-1.jpg") center;
-  background-size: cover;
-}
-
-.col-4.fancy-drink-2 {
-  background: url("./images/fd-2.jpg") center;
-  background-size: cover;
-}
-.col-4.fancy-drink-3 {
-  background: url("./images/fd-3.jpg") center;
-  background-size: cover;
-}
-
-.happy-hours .col-4 {
-  padding: 0;
-  height: 379px;
-  width: 100%;
 }
 
 /* Locations */
-.barroco-list h1.title {
-  color: rgb(222, 80, 33);
-  padding-top: 86px;
-  font-size: 48px;
-}
-
-.barroco-list .row h1 {
-  color: #000;
-  padding: 0;
-  margin: 0;
-}
-
 .barroco-list .row h6 {
-  font-size: 18px;
-  margin: 0;
   color: #605e5e;
+  font-size: 18px;
 }
 
-.barroco-list .row a {
+.barroco-list a {
   font-family: "Pacifico", cursive;
   text-decoration: underline;
-  color: rgb(222, 80, 33);
-  padding: 10px 0;
-  font-size: 27px;
-  display: block;
-}
-
-.barroco-list .row h2 {
-  padding: 0;
-  margin-bottom: 15px;
-  font-size: 46px;
-}
-
-.row.barroco-image .col-4 {
-  height: 390px;
-  width: 100%;
-}
-
-.col-4.b-birdtown {
-  background: url("./images/locations-1.jpg") center;
-  background-size: cover;
-}
-
-.col-4.b-crocker-park {
-  background: url("./images/locations-2.jpg") center;
-  background-size: cover;
-}
-
-.col-4.b-larchmere {
-  background: url("./images/locations-3.jpg") center;
-  background-size: cover;
 }
 
 /* Live music */
-
 .live-music span {
-  font-size: 80px;
   font-family: "Anton", sans-serif;
-  text-transform: uppercase;
   color: rgb(139, 1, 0);
   font-weight: 600;
+  font-size: 80px;
   letter-spacing: 66px;
-  display: block;
   left: 37%;
   top: 200px;
-  position: absolute;
 }
 
 .live-music span:nth-child(2) {
   color: rgb(232, 232, 232);
-  letter-spacing: 59px;
   top: 250px;
   left: 33%;
-}
-
-.live-music .image {
-  height: 834px;
-  background: url("./images/lm-2.jpg");
-  background-size: cover;
-  margin-bottom: 30px;
 }
 
 .live-music .video {
   height: 527px;
   background: url("./images/lm-1.jpg") center;
   background-size: cover;
-  position: relative;
 }
 
 /* Footer */
-
-p.copyright {
-  padding: 15px;
-  margin: 0;
-  font-weight: 200;
-  font-size: 14px;
-  background: #fafafa;
-}
-
-.contact {
-  margin: 25px 0px;
-}
-
-.main-footer h1 {
-  margin: 0;
-}
-
 .main-footer h6 {
-  color: #2d2d2d;
-  font-size: 14px;
-  font-weight: 200;
   margin: 2px;
 }
 
 .main-footer {
   background: #e8e8e8;
-  padding: 50px 0;
 }
